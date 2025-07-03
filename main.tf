@@ -21,7 +21,7 @@ ami = "ami-000ec6c25978d5999"
 instance_type = lookup(var.instance_types, var.group, "t2.micro")
 count = var.group == "dev" || var.group == "prod" ? 1:0
 tags = {
-Name = "Instance-for-$(var.group)"
+Name = "Instance-for-${var.group}"
 Group = var.group
 }
 }
