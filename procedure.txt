@@ -3,3 +3,4 @@ Step-2 :- terraform plan
 Step-3 :- terraform apply -var="group=dev" --auto-approve  #Launch for dev instance
                                         or
           terraform apply -var="group=prod" --auto-approve #Launch for prod instance
+Step-4 :- terraform destroy --auto-approve
