@@ -11,8 +11,8 @@ default = "dev"
 variable "instance_types" {
 type = map(string)
 default = {
-dev = "t2.micro"
-prod = "t2.micro"
+dev = "t3.micro"
+prod = "t3.small"
 }
 }
 
